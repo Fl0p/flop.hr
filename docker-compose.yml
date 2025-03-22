@@ -1,0 +1,30 @@
+services:
+  nextjs:
+    container_name: spinemaster-nextjs-container
+    image: spinemaster-nextjs:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        CF_TUNNEL_ID: ${CF_TUNNEL_ID}
+        CF_ZONE_ID: ${CF_ZONE_ID}
+        CF_API_TOKEN: ${CF_API_TOKEN}
+    ports:
+      - "3003:3000"
+    restart: unless-stopped
+    networks:
+      - spinemaster
+
+  cloudflared:
+    container_name: spinemaster-cloudflared-container
+    image: cloudflare/cloudflared:latest
+    command: tunnel --no-autoupdate run
+    restart: unless-stopped
+    volumes:
+      - ./config/cloudflared:/etc/cloudflared
+    networks:
+      - spinemaster
+
+networks:
+  spinemaster:
+    driver: bridge

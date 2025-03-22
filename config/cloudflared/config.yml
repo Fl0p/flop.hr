@@ -1,0 +1,7 @@
+tunnel: 3f6992b0-4efe-4b94-b695-2356ac6ff5ed
+credentials-file: /etc/cloudflared/keys/3f6992b0-4efe-4b94-b695-2356ac6ff5ed.json
+
+ingress:
+  - hostname: www.flop.hr
+    service: http://nextjs:3000
+  - service: http_status:404
