@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Flop.hr",
-  description: "FlopCoins home page",
+  title: "FlopCoin.art",
+  description: "FlopCoin's home page",
   icons: {
     icon: "/coin.svg",
   },

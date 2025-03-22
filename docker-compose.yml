@@ -1,7 +1,7 @@
 services:
   nextjs:
-    container_name: spinemaster-nextjs-container
-    image: spinemaster-nextjs:latest
+    container_name: flopcoin-nextjs-container
+    image: flopcoin-nextjs:latest
     build:
       context: .
       dockerfile: Dockerfile
@@ -13,18 +13,18 @@ services:
       - "3003:3000"
     restart: unless-stopped
     networks:
-      - spinemaster
+      - flopcoin
 
   cloudflared:
-    container_name: spinemaster-cloudflared-container
+    container_name: flopcoin-cloudflared-container
     image: cloudflare/cloudflared:latest
     command: tunnel --no-autoupdate run
     restart: unless-stopped
     volumes:
       - ./config/cloudflared:/etc/cloudflared
     networks:
-      - spinemaster
+      - flopcoin
 
 networks:
-  spinemaster:
+  flopcoin:
     driver: bridge
