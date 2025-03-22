@@ -1,0 +1,36 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: self-hosted
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        lfs: true
+
+    - name: Stop Docker
+      run: docker compose down --rmi all || true
+
+    - name: Download secure files
+      run: |
+        mkdir -p config/cloudflared/keys
+        cat <<EOF > .env
+        ${{ secrets.ENV_FILE }}
+        EOF
+        cat <<EOF > config/cloudflared/keys/key.json
+        ${{ secrets.KEY_JSON }}
+        EOF
+
+    - name: Build and start containers
+      run: |
+        echo "Building and starting containers..."
+        docker compose build --no-cache
+        docker compose up -d
+
+    - name: Clean up old images
+      run: docker image prune -f || true
