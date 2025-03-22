@@ -10,7 +10,7 @@ services:
         CF_ZONE_ID: ${CF_ZONE_ID}
         CF_API_TOKEN: ${CF_API_TOKEN}
     ports:
-      - "3003:3000"
+      - "3006:3000"
     restart: unless-stopped
     networks:
       - flopcoin
