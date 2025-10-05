@@ -12,7 +12,7 @@ export default function Home() {
 
         <section className="w-full flex flex-col md:flex-row items-center gap-6 bg-gray-100 dark:bg-gray-900 p-4 rounded">
           <div className="bg-gray-200 dark:bg-gray-800 w-80 h-80 flex items-center justify-center rounded order-1 md:order-2 overflow-hidden flex-shrink-0 relative">
-            <Image src="/c1.jpg" alt="FlopCoin" fill className="object-cover" />
+            <Image src="/s1.jpg" alt="FlopCoin" fill className="object-cover" />
           </div>
           <div className="order-2 md:order-1 flex-grow">
             <h2 className="text-2xl font-bold mb-3">What is a FlopCoin?</h2>
@@ -21,12 +21,15 @@ export default function Home() {
             When redeemed, this request takes priority over Flop&apos;s personal interests or plans.</p>
             <p>Additionally, each FlopCoin is a <strong>unique art object</strong> and a <strong>rare artifact</strong>.<br />
             There was only <strong>one issuance</strong> of FlopCoins, and there are around <strong>100 unique coins</strong> in existence. Some have already been used.</p>
+            <p>Some of the lucky FlopCoin owners are featured <a href="/owners" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">here</a></p>
+            <p className="mt-2"><strong>Q: How can you I get a FlopCoin?</strong></p>
+            <p><strong>A:</strong> The only way is if one of the <a href="/owners" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">owners</a> agrees to give it to you, gift it, or sell it.</p>
           </div>
         </section>
 
         <section className="w-full flex flex-col md:flex-row items-center gap-6 bg-gray-200 dark:bg-gray-800 p-4 rounded">
           <div className="bg-gray-200 dark:bg-gray-700 w-80 h-80 flex items-center justify-center rounded overflow-hidden flex-shrink-0 relative">
-            <Image src="/c3.jpg" alt="FlopCoin usage" fill className="object-cover" />
+            <Image src="/s2.jpg" alt="FlopCoin usage" fill className="object-cover" />
           </div>
           <div className="flex-grow">
             <h2 className="text-2xl font-bold mb-3">How can you use a FlopCoin?</h2>
@@ -36,12 +39,13 @@ export default function Home() {
             <p className="mb-2">After that, you&apos;ll agree on the <strong>details</strong>: where, when, and how the request will be fulfilled. You&apos;ll need to meet up to redeem the coin.</p>
             <p className="mb-2">In <strong>special or emergency situations</strong>, you can use the FlopCoin to ask Flop <strong>to stop doing something immediately</strong> — effectively pausing his activity for a full hour.</p>
             <p>You can also <strong>gift</strong> your FlopCoin, <strong>sell</strong> it on a marketplace, or <strong>keep it as a valuable souvenir</strong>.</p>
+            <p>Yes, you can pawn FlopCoin or take it to a scrap metal dealer. It is made of 99.99% pure silver.</p>
           </div>
         </section>
 
         <section className="w-full flex flex-col md:flex-row items-center gap-6  bg-gray-100 dark:bg-gray-900 p-4 rounded">
           <div className="bg-gray-200 dark:bg-gray-800 w-80 h-80 flex items-center justify-center rounded order-1 md:order-2 overflow-hidden flex-shrink-0 relative">
-            <Image src="/c5.jpg" alt="FlopCoin examples" fill className="object-cover" />
+            <Image src="/s3.jpg" alt="FlopCoin examples" fill className="object-cover" />
           </div>
           <div className="order-2 md:order-1 flex-grow">
             <h2 className="text-2xl font-bold mb-3">Examples of how to use a FlopCoin:</h2>
@@ -64,7 +68,7 @@ export default function Home() {
 
         <section className="w-full flex flex-col md:flex-row items-center gap-6 bg-gray-300 dark:bg-gray-700 p-4 rounded">
           <div className="bg-gray-200 dark:bg-gray-800 w-80 h-80 flex items-center justify-center rounded overflow-hidden flex-shrink-0 relative">
-            <Image src="/c2.jpg" alt="FlopCoin limitations" fill className="object-cover" />
+            <Image src="/s4.jpg" alt="FlopCoin limitations" fill className="object-cover" />
           </div>
           <div className="flex-grow">
             <h2 className="text-2xl font-bold mb-3">What can&apos;t you do with a FlopCoin?</h2>
