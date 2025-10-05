@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import Link from 'next/link';
 
 interface Owner {
   name: string;
@@ -24,9 +25,9 @@ export default async function Owners() {
       <section className="w-full flex flex-col md:flex-row items-center gap-6">
           <div>
             <h1 className="text-3xl font-bold mb-4">
-              <a href="/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">
+              <Link href="/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">
                 FlopCoin
-              </a> owners
+              </Link> owners
             </h1>
           </div>
         </section>

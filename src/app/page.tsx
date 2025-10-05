@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -21,9 +22,9 @@ export default function Home() {
             When redeemed, this request takes priority over Flop&apos;s personal interests or plans.</p>
             <p>Additionally, each FlopCoin is a <strong>unique art object</strong> and a <strong>rare artifact</strong>.<br />
             There was only <strong>one issuance</strong> of FlopCoins, and there are around <strong>100 unique coins</strong> in existence. Some have already been used.</p>
-            <p>Some of the lucky FlopCoin owners are featured <a href="/owners" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">here</a></p>
+            <p>Some of the lucky FlopCoin owners are featured <Link href="/owners" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">here</Link></p>
             <p className="mt-2"><strong>Q: How can you I get a FlopCoin?</strong></p>
-            <p><strong>A:</strong> The only way is if one of the <a href="/owners" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">owners</a> agrees to give it to you, gift it, or sell it.</p>
+            <p><strong>A:</strong> The only way is if one of the <Link href="/owners" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">owners</Link> agrees to give it to you, gift it, or sell it.</p>
           </div>
         </section>
 
